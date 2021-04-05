@@ -49,6 +49,11 @@ body {
 		max-width: 540px !important;
 	}
 }
+@media (max-width: 320px) {
+	li {
+		font-size: small;
+	}
+}
 
 .heading {
 	display: flex;
