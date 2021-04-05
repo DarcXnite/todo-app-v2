@@ -41,7 +41,7 @@ const TodoApp = () => {
   }
 
 	return (
-		<div className="container">
+		<div className="container todo-notepad">
 			<TodoHeader />
 			<TodoForm onAdd={addTodo} />
 			<SortButtons filter={filter} changeFilter={changeFilter} />

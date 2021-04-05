@@ -1,141 +1,159 @@
 body {
-  background-color: #ffeaa7;
-  min-height: 70vh;
-  padding: 1rem;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-  color: hsl(198, 1%, 29%);
-  font-family: "Architects Daughter", cursive;
-  text-align: center;
-  font-size: 130%;
+	background-color: #ffeaa7 !important;
+	min-height: 70vh;
+	padding: 1rem;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	color: hsl(198, 1%, 29%);
+	font-family: "Architects Daughter", cursive;
+	text-align: center;
+	font-size: 130%;
 }
 
-.container {
-  width: 100%;
-  height: auto;
-  min-height: 500px;
-  max-width: 500px;
-  min-width: 250px;
-  margin: auto;
-  background: #f1f5f8;
-  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
-  background-size: 25px 25px;
-  border-radius: 20px;
-  box-shadow: 4px 3px 7px 2px #00000040;
-  padding: 1rem;
-  box-sizing: border-box;
+.todo-notepad {
+	font-family: "Architects Daughter", cursive !important;
+	text-align: center;
+	padding: 1rem;
+	width: 70%;
+	height: auto;
+	min-height: 500px;
+	max-width: 540px;
+	min-width: 250px;
+	background: #f1f5f8;
+	background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+	background-size: 25px 25px;
+	border-radius: 20px;
+	box-shadow: 4px 3px 7px 2px #00000040;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 540px !important;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		max-width: 540px !important;
+	}
+}
+@media (min-width: 768px) {
+	.container {
+		max-width: 540px !important;
+	}
 }
 
 .heading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1rem;
 }
 .heading h1 {
-  transform: rotate(2deg);
-  padding: 0.2rem 1.2rem;
-  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
-  background-color: #fdcb6e;
-  font-size: 1.5rem;
+	transform: rotate(2deg);
+	padding: 0.2rem 1.2rem;
+	border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+	background-color: #fdcb6e;
+	font-size: 1.5rem;
 }
 
 .form input {
-  box-sizing: border-box;
-  background-color: transparent;
-  padding: 0.7rem;
-  border-bottom-right-radius: 15px 3px;
-  border-bottom-left-radius: 3px 15px;
-  border: solid 3px transparent;
-  border-bottom: dashed 3px #fdcb6e;
-  font-family: "Architects Daughter", cursive;
-  font-size: 1rem;
-  color: hsla(260, 2%, 25%, 0.7);
-  width: 70%;
-  margin-bottom: 20px;
-  outline: none;
+	box-sizing: border-box;
+	background-color: transparent;
+	padding: 0.7rem;
+	border-bottom-right-radius: 15px 3px;
+	border-bottom-left-radius: 3px 15px;
+	border: solid 3px transparent;
+	border-bottom: dashed 3px #fdcb6e;
+	font-family: "Architects Daughter", cursive;
+	font-size: 1rem;
+	color: hsla(260, 2%, 25%, 0.7);
+	width: 70%;
+	margin-bottom: 20px;
+	outline: none;
 }
 
 button {
-  padding: 0;
-  border: none;
-  font-family: "Architects Daughter", cursive;
-  text-decoration: none;
-  padding-bottom: 3px;
-  border-radius: 5px;
-  background-color: #ffeaa7;
+	padding: 0;
+	border: none;
+	font-family: "Architects Daughter", cursive;
+	text-decoration: none;
+	padding-bottom: 3px;
+	border-radius: 5px;
+	background-color: #ffeaa7;
 }
 button span {
-  background: #f1f5f8;
-  display: block;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  border: 2px solid hsl(198, 1%, 29%);
+	background: #f1f5f8;
+	display: block;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	border: 2px solid hsl(198, 1%, 29%);
 }
 
 li {
-  text-align: left;
-  position: relative;
-  padding: 0.5rem;
+	text-align: left;
+	position: relative;
+	padding: 0.5rem;
 }
 
 .todo-list {
-  display: block;
+	display: block;
 }
 
 .todo-list li label {
-  margin: 0 20px 0 0;
+	margin: 0 20px 0 0;
 }
 
 .icons {
-  float: right;
+	float: right;
 }
 
 .icons span {
-  margin: 0 5px 0 0;
-  color: darkgray;
+	margin: 0 5px 0 0;
+	color: darkgray;
 }
 
 .icons span:hover {
-  color: #bfc0c1;
-  cursor: pointer;
+	color: #bfc0c1;
+	cursor: pointer;
 }
 
 .addBtn:hover {
-  background-color: black;
-  color: white;
+	background-color: black;
+	color: white;
 }
 
 .completedTodo {
-  text-decoration: line-through;
+	text-decoration: line-through;
 }
 
 .sortBtns button {
-  margin-right: 10px;
-  padding: 2px 8px;
-  cursor: pointer;
-  outline: none;
+	margin-right: 10px;
+	padding: 2px 8px;
+	cursor: pointer;
+	outline: none;
 }
 
 .sortBtns button:hover {
-  background-color: lightblue;
+	background-color: lightblue;
 }
 
 .editInput {
-  box-sizing: border-box;
-  background-color: transparent;
-  border-bottom-right-radius: 15px 3px;
-  border-bottom-left-radius: 3px 15px;
-  border: solid 3px transparent;
-  border-bottom: dashed 3px #fdcb6e;
-  font-family: "Architects Daughter", cursive;
-  font-size: 1rem;
-  color: hsla(260, 2%, 25%, 0.7);
-  width: 70%;
-  outline: none;
+	box-sizing: border-box;
+	background-color: transparent;
+	border-bottom-right-radius: 15px 3px;
+	border-bottom-left-radius: 3px 15px;
+	border: solid 3px transparent;
+	border-bottom: dashed 3px #fdcb6e;
+	font-family: "Architects Daughter", cursive;
+	font-size: 1rem;
+	color: hsla(260, 2%, 25%, 0.7);
+	width: 70%;
+	outline: none;
 }
 
 .active {
-  background-color: lightblue;
+	background-color: lightblue;
 }
