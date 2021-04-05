@@ -17,6 +17,7 @@ body {
 	padding: 1rem;
 	width: 70%;
 	height: auto;
+	font-size: 160%;
 	min-height: 500px;
 	max-width: 540px;
 	min-width: 250px;
@@ -37,10 +38,11 @@ body {
 @media (max-width: 992px) {
 	.container {
 		max-width: 540px !important;
+		font-size: 140%;
 	}
-  .editInput {
-    width: 100% !important;
-  }
+	.editInput {
+		width: 100% !important;
+	}
 }
 @media (min-width: 768px) {
 	.container {
@@ -114,7 +116,7 @@ li {
 }
 
 .icons span {
-	margin: 0 5px 0 0;
+	margin: 0 15px 0 0;
 	color: darkgray;
 }
 
@@ -134,7 +136,7 @@ li {
 
 .sortBtns button {
 	margin-right: 10px;
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 	padding: 2px 8px;
 	cursor: pointer;
 	outline: none;
