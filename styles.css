@@ -34,10 +34,13 @@ body {
 		max-width: 540px !important;
 	}
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
 	.container {
 		max-width: 540px !important;
 	}
+  .editInput {
+    width: 100% !important;
+  }
 }
 @media (min-width: 768px) {
 	.container {
@@ -81,7 +84,7 @@ button {
 	font-family: "Architects Daughter", cursive;
 	text-decoration: none;
 	padding-bottom: 3px;
-	border-radius: 5px;
+	border-radius: 5px !important;
 	background-color: #ffeaa7;
 }
 button span {
@@ -131,6 +134,7 @@ li {
 
 .sortBtns button {
 	margin-right: 10px;
+  margin-bottom: 10px;
 	padding: 2px 8px;
 	cursor: pointer;
 	outline: none;
@@ -150,7 +154,7 @@ li {
 	font-family: "Architects Daughter", cursive;
 	font-size: 1rem;
 	color: hsla(260, 2%, 25%, 0.7);
-	width: 70%;
+	width: 300px;
 	outline: none;
 }
 
